@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manda Fotos Pelada 😏</title>
+    <style>
+        body {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: white;
+        }
+        #botoes {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        #botaoNao {
+            position: relative;
+            animation: mover 2s infinite linear alternate;
+        }
+        @keyframes mover {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: calc(100vw - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Manda Fotos Pelada 😏</h1>
+    <div id="botoes">
+        <button id="botaoSim" onclick="mostrarAviso()">Sim</button>
+        <button id="botaoNao" onclick="naoClicavel()">Não</button>
+    </div>
+
+    <script>
+        function mostrarAviso() {
+            alert('Brota no zap');
+        }
+
+        function naoClicavel() {
+            // Não faz nada, apenas para evitar clicar
+        }
+    </script>
+</body>
+</html>
